@@ -1,6 +1,6 @@
 [extension]
 id = "quicklook"
-version = "0.1.0"
+version = "0.1.1"
 api_version = 1
 name = "QuickLook"
 description = "Preview the focused file with QuickLook for Windows."
