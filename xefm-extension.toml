@@ -1,0 +1,19 @@
+[extension]
+id = "quicklook"
+version = "0.1.0"
+api_version = 1
+name = "QuickLook"
+description = "Preview the focused file with QuickLook for Windows."
+min_xefm = "1.10.0"
+platforms = ["windows"]
+updates = "github:SinisterSoftware/xefm-quicklook"
+
+[contributes.actions]
+"quicklook.preview" = { entry = "quicklook.actions:preview", description = "Preview the cursor file with QuickLook" }
+
+[contributes.key_suggestions]
+"quicklook.preview" = ["Alt-Z"]
+
+[requires]
+programs = ["quicklook.exe"]
+python_packages = ["psutil", "pywin32"]
